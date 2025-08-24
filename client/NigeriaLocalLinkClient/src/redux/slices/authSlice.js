@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';  
 import authService from '../../services/authService';
-import  decodeToken  from '../../utils/jwtHelper';
+import  decodeToken  from '../../utils/JwtHelper';
 export const register = createAsyncThunk('auth/register', async (userData, thunkAPI) => {
   try {
     const response = await authService.register(userData); 
